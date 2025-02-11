@@ -1,0 +1,9 @@
+#include <iostream>
+#include <bitset>
+int main() {
+    int num = 0b1101; // Двоичное число 1101 (13 в десятичной системе)
+    int shiftedLeft = num << 2;
+    std::cout << "Сдвиг влево на 2: " << std::bitset<8>(shiftedLeft) << " (" << shiftedLeft << ")" << std::endl;
+    int shiftedRight = num >> 1;
+    std::cout << "Сдвиг вправо на 1: " << std::bitset<8>(shiftedRight) << " (" << shiftedRight << ")" << std::endl;
+    return 0;}
